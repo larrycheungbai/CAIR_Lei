@@ -47,10 +47,10 @@ class FixedSizePriorityQueueLZ:
 
 
 pq_lz = FixedSizePriorityQueueLZ(3)
-pq_lz.push()
+pq_lz.push(3, 'test')
 
 
-while not pq_lz.empty():
+while not pq_lz.is_empty():
 	priority, item = pq_lz.pop()
 	print(priority)
 
