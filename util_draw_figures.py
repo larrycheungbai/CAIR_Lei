@@ -1,4 +1,5 @@
-
+#Use the following link to solve the missing font problem "findfont: Font family ['sans-serif'] not found" 
+#https://alexanderlabwhoi.github.io/post/2021-03-missingfont/
 import scipy.io
 mat = scipy.io.loadmat('synthesizedMotion.mat')
 
