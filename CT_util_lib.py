@@ -6,12 +6,6 @@ Created on Wed Jan 18 12:22:16 2023
 @author: Lei Zhang
 """
 
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jul 11 13:16:52 2022
-@author: yiran
-"""
 #import slicer
 import nibabel as nib
 import os
@@ -30,11 +24,6 @@ def nrrd2nii_itk(nrrd_fn, dest_folder, final_name):
     print(dest_folder + final_name)
     sitk.WriteImage(img, dest_folder + final_name)
     
-    
-    
-
-
-
 #This is low level implementation
 def nrrd2nii(ref_fn, nrrd_fn, dest_folder , prefix=''):
     #gt_fn_list = glob.glob(fname+'/*Nathan Segmentation.seg*.nrrd')    
