@@ -108,8 +108,12 @@ df_multiple = pd.DataFrame(data_tuples, columns=['PST_ID', 'manual_total_vol_ml'
                            'automated_label_5_vol_ml', 'automated_label_6_vol_ml',
                            'automated_label_7_vol_ml'])
 
-
-
+#Relative Volume Difference (RVD):
+#The formula for RVD between manual (ground truth) and automated volumes for a given label is:
+#𝑅𝑉𝐷=∣𝑉manual−𝑉automated∣ / 𝑉manual
+#Volume Similarity (VS):
+#VS=1− (∣Vmanual −Vautomated∣/(Vmanual+Vautomated))
+​
 # Create columns for RVD and VS for each label (1 through 7)
 for label in range(1, 8):
     manual_col = f'manual_label_{label}_vol_ml'
